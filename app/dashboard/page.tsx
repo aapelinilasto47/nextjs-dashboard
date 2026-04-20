@@ -11,8 +11,8 @@ export default async function Page() {
       </h1>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">Kortit</div>
       <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <RevenueChart />
-        <LatestInvoices />
+        <RevenueChart revenue={[]} />
+        <LatestInvoices latestInvoices={[]} />
       </div>
     </main>
   );
