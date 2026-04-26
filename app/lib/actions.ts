@@ -40,8 +40,7 @@ export async function authenticate(
     if (error instanceof AuthError) {
       switch (error.type) {
         case "CredentialsSignin":
-          return;
-          "Invalid email or password. Please check your credentials and try again.";
+          return "Invalid email or password. Please check your credentials and try again.";
         default:
           return "An unexpected error occurred. Please try again later.";
       }
